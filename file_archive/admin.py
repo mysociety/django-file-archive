@@ -1,5 +1,5 @@
 from django.contrib import admin
-from pombola.file_archive import models
+from . import models
 
 @admin.register(models.File)
 class FileAdmin(admin.ModelAdmin):
