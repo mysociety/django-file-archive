@@ -4,7 +4,7 @@ import datetime
 
 
 
-class File(models.Model):    
+class File(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
@@ -17,4 +17,3 @@ class File(models.Model):
     @models.permalink
     def get_absolute_url(self):
         return ( 'file_archive', [ self.slug ] )
-
